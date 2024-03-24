@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center; /* Para centrar los paneles */
+  align-items: center; /* Para centrar los paneles verticalmente */
+  min-height: 100vh; /* Para que los paneles ocupen al menos toda la altura de la ventana */
+}
+
+.container {
+  display: flex;
+  position: relative;
+  z-index: 0; /* Para que el panel de sombra quede detrás */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+  width: 90%; /* Ajustar el ancho del contenedor */
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  height: 90vh; /* Altura del contenedor */
+}
+
+#panel-izquierdo, #panel-derecho {
+  position: relative;
+  z-index: 1; 
+  height: 100%; 
+}
+
+#panel-izquierdo {
+  flex: 1; 
+  background-color: rgb(163, 163, 163);
+  padding: 20px;
+  width: 45%; 
+}
+
+#panel-derecho {
+  flex: 2;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 55%; 
+  align-items: center;
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+#imagen {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#login {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#crear-cuenta, #acceder {
+  text-align: right;
+  
+}
+.boton {
+  background-color: purple; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+  
+.boton:hover {
+  background-color: #6a5acd; 
+}
+#alineacion{
+
+  align-self: flex-end;
+}
